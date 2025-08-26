@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:"Roboto" ;
+    src: url(Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --cor_header: #1c7ce2;
+    --cor_font: #192252;
+    --cor_lorem: #58658c;
+    --cor_back: #f7fbff;
+    --cor_paragrafo: #58658c;
+    --font_main: "Roboto", Arial, sans-serif;
+    --font_size: 14px;
+}
+
+body{
+    background-color:var(--cor_back);
+    font-size: var(--font_size);
+    margin: auto;
+    font-family: var(--font_main);
+}
+
+main{
+    max-width: 900px;    /* limite para telas grandes */
+    margin: 0 auto;       /* centraliza horizontalmente */
+}
+
+
+header {
+    display: flex;
+    background-color: var(--cor_header);
+    height: 2.7em;
+}
+
+.header_top {
+    display: flex;
+    min-width: 900px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.header_email{
+    display: flex;
+    align-items: center;
+}
+
+.header_right{
+    display: flex;
+    align-items: center;
+}
+
+.header_email > a {
+    text-decoration: none;
+    margin-left: 3px;
+    color: var(--cor_back);
+}
+
+.header_right > a {
+    text-decoration: none;
+    margin-left: 8px;
+    color: var(--cor_back);
+}
+
+.header_email > img {
+    width: 18px;
+}
+
+.header_right > img {
+    width: 18px;
+    margin-left: 10px;
+}
+
+.nav_container {
+    display: flex;
+    max-width: 900px;
+    height: 3em;
+    margin: 0 auto; 
+    justify-content: space-between;
+}
+
+.nav_left {
+    display: flex;
+}
+
+.nav_links {
+    display: flex;
+    align-items: center;
+}
+
+.nav_links > a {
+    text-decoration: none;
+    margin: 0 1.8em 0 1.8em;
+    font-weight: bold;
+    color: black;
+    font-family: var(--font_main);
+}
+
+.nav_buttons{
+    padding-top: 15px;
+}
+
+.nav_buttons > button {
+    margin-left: 10px;
+}
+
+.btn_client {
+    background-color: var(--cor_header);
+}
+
+.middle_info{
+    display: flex;
+    height: 350px;
+    align-items: center;
+}
+
+.text_info {
+    width: 450px;
+}
+
+.picture_info > img {
+    width: 450px;
+}
+
+#text_descount {
+    color: var(--cor_header);
+}
+
+#text_description {
+    color: var(--cor_paragrafo);
+    
+}

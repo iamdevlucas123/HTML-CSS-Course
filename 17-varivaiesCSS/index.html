@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Variaveis em CSS</title>
+    <style>
+
+    /*
+    - Root é onde definimos as variáveis globais do CSS
+    - Para definirmos uma variavel precisamos colocar dois traços (--) antes do nome:
+    */
+
+        :root {
+            --cor1: #c5ebd6;
+            --cor2: #51aa79;
+            --cor3: #11542f;
+            --cor4: #052e18;
+            --cor5: #c5ebd6;
+
+            --fonte_padrao: Arial, Verdana, sans-serif;
+        }
+
+    /*
+    - Para declarar a variavel usamos var(nomedavariavel). Ex:
+    */
+        body{
+            background-color: var(--cor1);
+            font: var(--fonte_padrao);
+            color: var(--cor3);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Teste de variaveis em CSS</h1>
+    <p>O CSS possui variaveis, onde pode se colocar dados para serem usados depois, como uma função-
+    </p>
+</body>
+</html>

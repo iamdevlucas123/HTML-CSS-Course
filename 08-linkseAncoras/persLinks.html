@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            /*Quando eu coloco cor para os links, após clicar ele não muda de cor como antes, para voltar a fazer isso podemos usar uma pseudo classe visited*/
+            text-decoration: none;
+            /*Para retirar o underline nas palavras*/
+        }
+
+        a:visited {
+            color: blue;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>PERSONALIZANDO LINKS</h1>
+    <ul>
+        <li><a href="https://github.com/foolhardy21/fullstack-Helsinki/blob/main/Part%200/0.4.pdf">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=22">Video do youtube</a></li>
+        <li><a href="https://www.educative.io/learn/home">Site Educative.io</a></li>
+        <li><a href="https://chatgpt.com/c/6889d768-9fc0-8325-9a1f-57cb16f29a53">Chatgpt</a></li>
+    </ul>
+</body>
+</html>

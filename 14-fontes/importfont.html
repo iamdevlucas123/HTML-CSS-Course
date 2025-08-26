@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes importadas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
+        /*Aqui estou importando uma fonte do google fontes, e posso usar no CSS*/
+        /*Prestar atenção pois algumas fontes não possuem acentuação*/
+
+        /*Usando o font-face eu consigo utilizar as fontes que estão como arquivos na minha pasta*/
+        @font-face {
+            font-family: 'nomedafamilia' ;
+            src: url('UnZialish.ttf') format(truetype);
+        }
+        /*
+        O metodo format() informa ao navegador o formato do arquivo da fonte, como::
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - trueytpe-aat (Apple Advanced Typography)
+            - svg
+            (Para sites, o formato recomendado é woff2, porque é mais leve e otimizado para a web.)
+        */
+
+        h1 {
+            font-family: "Playwrite HU", cursive;
+            /*Assim eu uso a fonte que importei do google fontes*/
+            font-size: 3em;
+        }
+
+        p {
+            font-family: 'nomedafamilia';
+            /*Aqui eu indico o nome da familia que eu criei no font-face*/
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fontes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci vero neque earum nesciunt minima nisi iste odit, quas eum voluptas vitae consequatur fugiat distinctio dolores eaque perspiciatis quasi quo! Odit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi qui officiis quam exercitationem amet sunt aliquam, vero iusto illo vel eum ducimus aspernatur culpa possimus veritatis corporis repudiandae. Laudantium, repellendus!</p>
+    <h2>Fontes</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea earum ratione ipsam voluptatibus incidunt velit consequatur esse voluptatem itaque! Fugiat ullam blanditiis, vitae perferendis vero tempora aliquid iste maiores recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto omnis ea voluptatibus inventore neque voluptatum commodi possimus velit placeat veritatis. Molestiae, ipsa ex excepturi maiores labore magnam quibusdam consequatur provident!</p>
+</body>
+</html>
+

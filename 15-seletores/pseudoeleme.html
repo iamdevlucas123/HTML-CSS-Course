@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elemento</title>
+<style>
+    /*Pseudo-elementos permitem estilizar partes específicas de um elemento sem precisar criar uma tag HTML extra. Eles usam dois-pontos duplos (::) e não precisam estar no HTML, só no CSS.*/
+
+h1::before {
+    content: "🔥 ";
+}
+
+h2::after {
+    content: " 🎉";
+}
+
+p::first-letter {
+    font-size: 200%;
+    color: red;
+}
+
+/*Podemos usar classes, Id, todo tipo de elemento*/
+.SegTitulo::first-letter {
+    font-size: 2em;
+}
+
+/*Modifica a seleção de texto*/
+::selection {
+  background: yellow;
+  color: black;
+}
+
+input::placeholder {
+  color: gray;
+  font-style: italic;
+}
+
+</style>
+</head>
+<body>
+    <h1>PESEUDO ELEMENTOS</h1>
+    <h2>subtitulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod unde beatae molestiae dicta dignissimos maxime sunt ad repellat reprehenderit, porro voluptatum, ea eius, explicabo nulla error. Expedita, dolorem. Doloribus, perferendis.</p>
+    <h2 class="SegTitulo">Subtitulo 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit deleniti nulla cupiditate enim libero dignissimos, quo, minima blanditiis debitis odio soluta architecto eos? Dolores magni sequi deleniti non debitis quis.</p>
+    <input type="text" placeholder="Digite seu nome">
+</body>
+</html>

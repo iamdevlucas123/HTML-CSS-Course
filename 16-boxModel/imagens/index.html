@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model ou aninhamento</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: blueviolet;
+        }
+
+        .item {
+            height: 150px;
+            width: 200px;
+            text-align: center;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: rgb(182, 57, 57);
+
+            margin-top: 20px;
+            margin-right: auto;
+            margin-bottom: 10px;
+            margin-left: auto;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /*outline: fica por fora da borda, não altera o tamanho do elemento, e normalmente é usado para acessibilidade (como destacar o foco em um campo de formulário).*/
+            /*Não aparece no devTools pois fica dentro da margin*/
+            outline-width: 10px;
+            outline-style: dashed;
+        }
+
+        /*AGORA COM UM MODELO SHORTHANDS*/
+
+        .container2 {
+            display: flex;
+            background-color: blueviolet;
+        }
+
+        .shortHands {
+            height: 150px;
+            width: 200px;
+            text-align: center;
+
+            border: 10px solid rgb(182, 57, 57);
+            margin: 20px auto 18px auto;
+            padding: 10px 15px 16px 22px;
+            outline: 10px dashed black;
+
+            /*Sempre usar o sentido horário do relógio*/
+            /*Caso todos os lados precisem ter o mesmo tamanho colocamos margin: 10px; ou seja todos os lados vão ter o mesmo*/
+            /*Isso funciona em todos os casos*/
+            /*Porem caso eu coloque apenas 2 valores como margin: 10px 20px; o resultado será que o de cima e o de baixo ficarão com 10px e o da esquerda e direita firão com 20px*/
+            /*auto significa centralizado automaticamente*/
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">ITEM1</div>
+        <div class="item">ITEM2</div>
+        <div class="item">ITEM3</div>
+    </div>
+
+    <div class="container2">
+        <div class="shortHands">shortHands</div>
+        <div class="shortHands">shortHands</div>
+        <div class="shortHands">shortHands</div>
+    </div>
+</body>
+</html>

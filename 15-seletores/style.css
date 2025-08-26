@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/*
+    em HTML é ID = em CSS é #
+    em HTML class = em CSS é .
+*/
+
+h1 {
+    color: rgb(3, 110, 3);
+}
+
+#principal{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgba(127, 255, 212, 0.49);
+}
+
+/*
+- Repare que mesmo eu definindo o h1 o que se aplica é o identificador
+- não use o mesmo id para diferentes elementos no HTML (um id para cada documento html) para isso podemos usar a class.
+*/
+
+body {
+    background-color: rgba(63, 73, 73, 0.405);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+- Dê o nome da claase pela função que ele faz
+*/
+.subtituloPrincipal{
+    background-color: rgba(165, 42, 42, 0.444);
+}
+
+.subtituloSecundario{
+    background-color: rgba(210, 105, 30, 0.433);
+}
+
+.destaque {
+    background-color: blueviolet;
+}

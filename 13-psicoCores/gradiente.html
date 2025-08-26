@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste gradiente</title>
+    <style>
+        * { /*O asterisco significa aterações globais no site*/
+            height: 100%;
+        }
+        body{
+            background-image: linear-gradient(to top, rgb(101, 100, 100), rgb(77, 77, 170));
+            background-attachment: fixed;
+        /*Também posso usar o radial-gradient*/
+        /*Quando eu coloco "to top" o gradiente fica em varias partes, antes preciso alterar no CSS global height: 100%;*/
+        /*posso colocar to bottom, to top, to left, to right ou em graus: 45deg (significa 45 graus)*/
+        /*background-attachment controla como o plano de fundo (background) de um elemento se comporta em relação à rolagem da página.*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando gradiente</h1>
+</body>
+</html>

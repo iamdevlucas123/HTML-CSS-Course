@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*Alguns computadores não possuem todos os tipos de fontes, logo quando coloco no font-family 3 opções ele vai tentar todas em ordem.*/
+            /*sans-serif significa que não tera serifa, que não vai ter a perninha em baixo*/
+            font-size: 37px;
+            /*
+            Medidas absolutas:
+            cm, mm, in, px, pt, pc
+            
+            Medidas relativas:
+            em, ex, rem, vw, vh, %
+
+            melhores alternativas: px e em (16px = 1em)
+            o 16px é o tamanho ideal e não use as outras unidade pois as outras desconfiguram dependendo do dispositivo.
+            */
+            font-weight: bold;
+            /*
+            Define a grossura da letra
+            lighter normal bold ou bolder (negrito)
+            ou pode ser entre 100-900
+            */
+        }
+        h1{
+            /*
+            font-family: Arial, sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+            font: italic bolder 3em arial, sans-serif
+            /*shorthand font, uma forma comprimida de fazer tudo*/
+            /*font: font-style -> font-weight -> font-size -> font-family*/
+            /*Podemos importar fontes usando o google fontes e usando o modulo @import caso tenha algo diferente*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, recusandae quis deserunt, neque, at corrupti ad provident facilis debitis tempora unde hic maxime. Dicta nihil, sint perspiciatis eveniet excepturi quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores fuga, nihil unde mollitia iure voluptatum totam commodi eligendi, explicabo facilis nobis vero ex libero provident quaerat et ipsam? Ratione, quidem!</p>
+    <h2>Subtítulo do exercicio</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut dignissimos velit consequatur tenetur itaque in deserunt illo, sunt repellat quam eos quibusdam facilis voluptatum vel dolores error, quia tempore deleniti?</p>
+</body>
+</html>

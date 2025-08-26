@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+<style>
+    div{
+        display: inline-block;
+        /*Alinha blocos em linha no display (tela)*/
+        background-color: white;
+        border: 1px solid black;
+        text-align: center;
+        height: 200px;
+        width: 200px;
+    }
+
+    /*Quando usamos : isso é um apseudo classe*/
+    /*Pseudo-classes são palavras-chave que você adiciona a seletores CSS para aplicar estilos especiais a elementos em determinados estados — sem precisar alterar o HTML.*/
+    /*Por exemplo, o hover faz com que quando voce passe o mouse mude algum aspecto do CSS*/
+    div:hover {
+        background-color: rgb(138, 56, 213);
+    }
+
+    /*O sinal de maior identifica que o paragrafo esta dentro (é filho) da div, então é um CSS para o paragrafo*/
+    /*display: none  é uma regra de CSS que remove completamente um elemento da página visualmente e estruturalmente. */
+    div:hover > p {
+        display: none;
+    }
+
+</style>
+</head>
+<body>
+    <!--DIV é uma tag de bloco genérica usada para agrupar outros elementos HTML-->
+    <div>
+        <p>01</p>
+        <p>modulo 1</p>
+    </div>
+    <div>
+        <p>02</p>
+        <p>modulo 1</p>
+    </div>
+    <div>
+        <p>03</p>
+        <p>modulo 1</p>
+    </div>
+</body>
+</html>

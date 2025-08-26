@@ -1,0 +1,21 @@
+/*Tudo que estiver com @ no inicio do CSS é uma regra at-rule (regras com arroba)*/
+/*Por exemplo o charset Diz ao navegador qual codificação de caracteres o arquivo CSS está usando*/
+/*Se @charset não estiver na primeira linha, será ignorado pelo navegador.*/
+/*Tambem existem outras regras (pesquisar)*/
+
+@charset "UTF-8";
+
+body {
+    background-color: black;
+    color: aliceblue;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+h1 {
+    color: aliceblue;
+}
+
+h2 {
+    color: aqua;
+}

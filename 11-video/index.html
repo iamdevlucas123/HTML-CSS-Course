@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>videos</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video está hospedado no meu próprio servidor</p>
+    <ul>
+        <li>Cuidado com os direitos autorais</li>
+        <li>melhor opção para videos sem diretiros autorais é o pexels</li>
+        <li>Compatibilidade com navegadores: MP4, WEBM, OGV E MKV</li>
+        <li>Videos hospedados: HandBrake converter videos</li>
+        <li>Videos até 1080 podem ser hospedados, mas quando excedem isto precisamos pensar no uso de dados do servidor, vai ser pago a mais por hospedagem</li>
+        <br>
+        <video src="midia/Meuvideo.mp4" width="500" controls></video>
+        <!--controls faz com que consiga ser reproduzido-->
+        <!--Desta forma de colocar o video faz com que se consiga colocar apenas um formato de video, podendo dar erro quando aberto em outros navegadores-->
+        <li>Agora em baixo vou colocar todas as opções de video e uma capa para o mesmo</li>
+        <video controls width="500" poster="midia/waterfolder.jpg" autoplay loop>
+            <source src="midia/Meuvideo.mp4" type="video/MP4">
+            <source src="midia/Meuvideo.mkv" type="video/mkv">
+            <source src="midia/Meuvideo.webm" type="video/webm">
+            <p>Seu navegador não tem compatibilidade com reprodução de videos</p>
+        </video>
+        <!--ESTE METODO FAZ COM QUE O CUSTO DE HOSPEDAGEM É CARO-->
+        <!--poster é a capa que fica no video antes de dar play-->
+        <!--autoplay faz com que ele inicie sozinho-->
+        <!--loop faz com que ele rode em loop-->
+        <!--Esse bloco HTML define um vídeo com 3 fontes alternativas (MP4, MKV, WebM). O navegador tenta reproduzir o primeiro formato suportado. Ele exibe controles padrão e uma imagem antes do vídeo iniciar. Se o navegador não conseguir reproduzir nenhum formato, mostra uma mensagem alternativa.-->
+    </ul>
+<br>
+
+
+</body>
+</html>

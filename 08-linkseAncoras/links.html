@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Voce pode acessar meu <a href="https://www.notion.so/WORK-SPACE-055854d925c64ec794a7f3eded5959eb">meu notion</a> com um hiperlink de referência usando a tag a </p>
+    <p>Porem com esse ele fecha a janela original da minha página, isso não é uma boa ideia</p>
+
+    <h2>link externo com abertura de janela</h2>
+    <a href="https://www.notion.so/WORK-SPACE-055854d925c64ec794a7f3eded5959eb" target="_blank" rel="external">Clique aqui</a>
+    <p>É ideal que a o site externo abra em outra aba, pois assim não se perde o acesso do cliente</p>
+
+    <h2>Atributo rel (relationship)</h2>
+
+    <p>O atributo rel em HTML significa "relationship" — ou seja, ele define o tipo de relação entre o documento atual e o link que está sendo referenciado.</p>
+
+    <p>
+    noopener = Evita que a nova aba tenha acesso à aba original (mais seguro) <br>
+    noreferrer = Evita que o site de destino veja de onde veio o clique <br>
+    nofollow = Diz aos mecanismos de busca para não seguir o link <br>
+    external = (esse sim é válido!) Indica que o link leva para fora do site
+    </p>
+
+    <h2>Atributo target</h2>
+
+    <p>O atributo target é usado em links (a) e formulários (form) para definir onde o conteúdo do link ou da ação será exibido.</p>
+
+    <p>
+    _self= (padrão)	Abre o link na mesma aba/janela atual<br>
+    _blank=	Abre o link em uma nova aba ou janela<br>
+    _parent=	Abre o link na janela pai (em caso de frames)<br>
+    _top=	Abre no frame mais externo (remove qualquer iframe)<br>
+    nomePersonalizado=	Abre o link em uma janela com esse nome (pode ser usada como alvo em JavaScript)
+    </p>
+
+    <h2>Links internos</h2>
+    <p><a href="pagina2.html" rel="next">Clique aqui</a> Para ir para a segunda pagina do projeto</p>
+    <p>O valor next no atributo rel indica que o link leva para a próxima página de uma sequência — por exemplo, quando você tem uma paginação (página 1, página 2, etc.).</p>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens proporcionais</title>
+</head>
+<body>
+    <h1>imagens proporcionais</h1>
+    <p>Abra esse site em outros dispositivos ou altere o tamanho do navedador para ver a imagem alterar sem tamanho</p>
+    <picture>
+        <source media="(max-width: 580px)" srcset="imagem_p.png">
+        <source media="(max-width: 780px)" srcset="imagem_M.png" >
+        <img src="imagem_G.png" alt="Imagem grande">
+    </picture>
+    <!--
+    - A tag <picture> é um "gerenciador de imagens" serve para fornecer imagens responsivas e adaptáveis, permitindo que o navegador escolha a melhor imagem a ser carregada, oferece suporte a formatos modernos de imagem (WebP ou AVIF)
+        EX:
+        <picture>
+  <source srcset="imagem.avif" type="image/avif">
+  <source srcset="imagem.webp" type="image/webp">
+  <source media="(max-width: 600px)" srcset="imagem-mobile.jpg">
+  <img src="imagem-padrao.jpg" alt="Descrição da imagem">
+        </picture>
+    O navegador vai:Usar imagem.avif se suportar AVIF, Se não, tentar imagem.webp, Se a tela for pequena usar imagem-mobile.jpg. Caso nada funcione, exibir imagem-padrao.jpg.
+    
+    -A tag <source> é usada dentro de elementos como <picture>, <audio>, e <video> para especificar diferentes fontes (arquivos) de mídia que o navegador pode escolher com base em critérios como tipo de arquivo ou tamanho da tela.
+
+
+    - A ordem dos souces precisam ser obedecidas do menor para o maior e precisa ficar em cima da imagem
+    - "media", uma media query é uma regra que pode ser usada em CSS e em casos da tag <source> em HTML. Ela apica estilos ou carrega recursos diferentes dependendo das caracterisiticas do dispositivo ou tela do usuario.
+
+    -->
+
+</body>
+</html>
