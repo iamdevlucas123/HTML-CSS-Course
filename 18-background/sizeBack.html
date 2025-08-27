@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de background</title>
+    <style>
+        body{
+            /*
+            background-color: black;
+            background-image: url(imagem/wallpaper002.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: scroll;
+            O size, faz com que a imagem se organize no fundo, o cover faz com que o tamanho se ajuste responsivamente*/
+
+
+            /*
+            ShortHand background:
+                background: color > image > position > (size) > attachment 
+                PS: O size na documentação funciona mas o chrome não esta aceitando*/
+
+            background: black url(imagem/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
+        }
+
+        main {
+            width: 300px;
+            background-color: aliceblue;
+            padding: 20px;
+            border-radius: 10%;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste background</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At dolor corporis repellat asperiores corrupti, dignissimos natus tenetur voluptatum earum, ipsa, officia a ut numquam quae blanditiis est fugit ad illum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, odit! Molestias mollitia qui aperiam, magnam veritatis consequuntur, at sapiente, iure in quo officiis nihil eveniet nesciunt nemo cum unde necessitatibus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit deleniti quae rerum debitis nobis veniam velit, quisquam, placeat omnis necessitatibus fugit non dolorum, tempore ipsam aliquid! Consequuntur perspiciatis dolore velit!Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus veniam, dolor ipsum quibusdam dolorem cumque dignissimos aliquam consectetur officiis deleniti veritatis accusantium et, exercitationem est aperiam? Esse maxime laboriosam tempore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut rerum qui, repellat ut nisi quibusdam libero tempore soluta officia esse quo, ipsum expedita itaque illum nulla exercitationem iure totam alias?Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta rem, perferendis error magni repellendus labore quisquam repudiandae veritatis reprehenderit fugit? Odit sequi voluptate ab modi error voluptatibus, at porro. Nihil!Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis expedita exercitationem dolore officia repudiandae similique repellat. Delectus adipisci reprehenderit nam numquam vel tempora laboriosam rerum reiciendis suscipit, cumque earum accusamus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis sapiente, ipsa sit molestiae, cum recusandae blanditiis temporibus possimus tenetur eos delectus accusantium quos est modi rerum ullam et. Aut, tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus itaque aperiam excepturi. Officiis impedit distinctio voluptatibus quaerat, quidem quia, alias temporibus vitae laborum dolorem iure facere, animi soluta neque est?</p>
+    </main>
+</body>
+</html>
