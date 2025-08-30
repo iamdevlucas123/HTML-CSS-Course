@@ -4,8 +4,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        thead, tfoot {
+            background-color: rgba(0, 0, 0, 0.685);
+            color: white;
+        }
+
+        table {
+            text-align: center;
+            vertical-align: middle;
+            border-collapse: collapse;
+            width: 50vw;
+        }
+
+        td, th, tr {
+            border: solid black;
+            padding: 10px;
+        }
+
+        td.num {
+            text-align: middle;
+        }
+
+        /*O :nth-child(n) é um pseudo-classe que seleciona elementos baseados na sua posição entre irmãos (siblings) dentro do mesmo pai.*/
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgrey;
+        }
+
+        tbody > tr:nth-child(even) {
+            font-weight: bolder;
+        }
+
+    </style>
 </head>
 <body>
+    <!--
+    - Sempre seguir a semântica das tags
+    - Memos eu colocando as tags em sequencias diferentes o HTML ainda ajusta
+
+        ANATOMIA PARA TABELAS GRANDES
+        <TABLE>
+            CAPTION (RUBRICA OU TITULO)
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+        <TABLE>
+    -->
+    <!--
+        HIERARQUIA DE TABELAS (simples)
+            TABLE ROW (tr) = linha de tabela
+            TABLE HEADER (th) = titulos
+            TABLE DATA (td) = celula de tabela  (dados, numeros)
+        
+        O atributo scope é usado dentro da tag <th> em tabelas HTML para indicar a quais células o cabeçalho está associado.
+        Ele é importante para acessibilidade, pois ajuda leitores de tela a relacionarem corretamente cabeçalhos (<th>) com os dados (<td>).
+    -->
+    
+    <table>
+        <caption>População das unidades por cidade</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">37 919 049</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">20 919 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">37 919 049</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">20 919 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">37 919 049</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">20 919 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">37 919 049</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">20 919 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">37 919 049</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">20 919 049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">37 919 049</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">20 919 049</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td>000000</td>
+            </tr>
+        </tfoot>
+    </table>
     
 </body>
 </html>
